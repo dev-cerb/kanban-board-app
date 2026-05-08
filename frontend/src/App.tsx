@@ -2,10 +2,10 @@ import Board from "./components/Board";
 
 function App() {
   return (
-    <>
-      <h1 className="">Kanban Board App</h1>
+    <div className="min-h-screen bg-zinc-100 dark:bg-zinc-900 transition-colors">
+      <h1 className="mb-6 text-xl">Kanban Board App</h1>
       <Board />
-    </>
+    </div>
   );
 }
 

@@ -17,7 +17,7 @@ export default function Board() {
   const doneTasks: Task[] = tasks.filter((task) => task.status === "done");
 
   return (
-    <div>
+    <div className="flex flex-col md:flex-row md:justify-center md:items-start gap-6 p-6">
       <Column title="Pendentes" tasks={todoTasks} />
       <Column title="Em Andamento" tasks={doingTasks} />
       <Column title="Concluídas" tasks={doneTasks} />
